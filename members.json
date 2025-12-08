@@ -19,7 +19,7 @@
       "achievement": "Top Fragger",
       "tag": "Rusher",
       "image": "002.jpg",
-      "tier": "platinum",
+      "tier": "normal",
       "featured": true
     },
     {
@@ -30,8 +30,8 @@
       "achievement": "Content Creator",
       "tag": "Youtuber",
       "image": "015.jpg",
-      "tier": "creator",
-      "featured": true
+      "tier": "normal",
+      "featured": false
     },
     {
       "id": "009",
@@ -41,7 +41,7 @@
       "achievement": "Sniper God",
       "tag": "Sniper",
       "image": "009.jpg",
-      "tier": "prime",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -52,7 +52,7 @@
       "achievement": "Daily Grinder",
       "tag": "Active",
       "image": "008.jpg",
-      "tier": "active",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -63,8 +63,8 @@
       "achievement": "Social Handler",
       "tag": "Social",
       "image": "004.jpg",
-      "tier": "silver",
-      "featured": false
+      "tier": "normal",
+      "featured": true
     },
     {
       "id": "020",
@@ -74,7 +74,7 @@
       "achievement": "",
       "tag": "New",
       "image": "020.jpg",
-      "tier": "bronze",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -107,7 +107,7 @@
       "achievement": "",
       "tag": "",
       "image": "006.jpg",
-      "tier": "silver",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -140,7 +140,7 @@
       "achievement": "",
       "tag": "",
       "image": "011.jpg",
-      "tier": "prime",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -173,7 +173,7 @@
       "achievement": "",
       "tag": "",
       "image": "014.jpg",
-      "tier": "platinum",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -184,7 +184,7 @@
       "achievement": "",
       "tag": "",
       "image": "016.jpg",
-      "tier": "silver",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -239,7 +239,7 @@
       "achievement": "",
       "tag": "",
       "image": "022.jpg",
-      "tier": "bronze",
+      "tier": "normal",
       "featured": false
     },
     {
@@ -250,8 +250,8 @@
       "achievement": "",
       "tag": "",
       "image": "023.jpg",
-      "tier": "active",
-      "featured": false
+      "tier": "normal",
+      "featured": true
     }
   ]
 }
