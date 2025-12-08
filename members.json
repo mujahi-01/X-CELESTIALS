@@ -1,0 +1,257 @@
+{
+  "members": [
+    {
+      "id": "001",
+      "name": "X-MUJAHI",
+      "uid": "1771113360",
+      "bio": "mera gameplay hogeya jhat bhar :( yt: 1.3k",
+      "achievement": "Guild Leader",
+      "tag": "Leader",
+      "image": "001.jpg",
+      "tier": "gold",
+      "featured": true
+    },
+    {
+      "id": "002",
+      "name": "IGT JOKER",
+      "uid": "1076549374",
+      "bio": "thefalcons_ff",
+      "achievement": "Top Fragger",
+      "tag": "Rusher",
+      "image": "002.jpg",
+      "tier": "platinum",
+      "featured": true
+    },
+    {
+      "id": "015",
+      "name": "X-Kavya",
+      "uid": "8806306023",
+      "bio": "@_kavya93 YouTube - Kavya Gamer",
+      "achievement": "Content Creator",
+      "tag": "Youtuber",
+      "image": "015.jpg",
+      "tier": "creator",
+      "featured": true
+    },
+    {
+      "id": "009",
+      "name": "X- ZUBAI 007",
+      "uid": "1803648114",
+      "bio": "DO TARFA BOHUT MUSKIL HAI ig: thefalcons_ff",
+      "achievement": "Sniper God",
+      "tag": "Sniper",
+      "image": "009.jpg",
+      "tier": "prime",
+      "featured": false
+    },
+    {
+      "id": "008",
+      "name": "BEAST÷HUNT",
+      "uid": "2081907767",
+      "bio": "KEEP TRYING AND KEEP WINNING HARDWORK PAYS",
+      "achievement": "Daily Grinder",
+      "tag": "Active",
+      "image": "008.jpg",
+      "tier": "active",
+      "featured": false
+    },
+    {
+      "id": "004",
+      "name": "X-ANIL",
+      "uid": "8692985558",
+      "bio": "insta: its_choudhary_67",
+      "achievement": "Social Handler",
+      "tag": "Social",
+      "image": "004.jpg",
+      "tier": "silver",
+      "featured": false
+    },
+    {
+      "id": "020",
+      "name": "1n2c",
+      "uid": "9399387304",
+      "bio": "New Recruit",
+      "achievement": "",
+      "tag": "New",
+      "image": "020.jpg",
+      "tier": "bronze",
+      "featured": false
+    },
+    {
+      "id": "003",
+      "name": "꧁S.A.D.O.W.꧂",
+      "uid": "7426733304",
+      "bio": "Silent Killer",
+      "achievement": "",
+      "tag": "",
+      "image": "003.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "005",
+      "name": "OG+(SUBHAM+)",
+      "uid": "7827902793",
+      "bio": "",
+      "achievement": "",
+      "tag": "",
+      "image": "005.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "006",
+      "name": "anand,876522",
+      "uid": "9769073279",
+      "bio": "Battle in Style!",
+      "achievement": "",
+      "tag": "",
+      "image": "006.jpg",
+      "tier": "silver",
+      "featured": false
+    },
+    {
+      "id": "007",
+      "name": "x1JUNAIDJOD1",
+      "uid": "8017079130",
+      "bio": "X1 gaming bhai main aap ka bahut bada fan hoon❤",
+      "achievement": "",
+      "tag": "",
+      "image": "007.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "010",
+      "name": "Oggy",
+      "uid": "3173612164",
+      "bio": "Radhe Radhe",
+      "achievement": "",
+      "tag": "",
+      "image": "010.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "011",
+      "name": "☬TERROR¸",
+      "uid": "999640507",
+      "bio": "MEME WO KHOYA JO MERA THA HI NEHI",
+      "achievement": "",
+      "tag": "",
+      "image": "011.jpg",
+      "tier": "prime",
+      "featured": false
+    },
+    {
+      "id": "012",
+      "name": "¿?-Gojo-exe",
+      "uid": "789024701",
+      "bio": "Domain Expansion",
+      "achievement": "",
+      "tag": "",
+      "image": "012.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "013",
+      "name": "☬TERROR†",
+      "uid": "10543127020",
+      "bio": "Gaming is Life",
+      "achievement": "",
+      "tag": "",
+      "image": "013.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "014",
+      "name": "K₡ MENTAL ✓",
+      "uid": "809496507",
+      "bio": "jay shree ram",
+      "achievement": "",
+      "tag": "",
+      "image": "014.jpg",
+      "tier": "platinum",
+      "featured": false
+    },
+    {
+      "id": "016",
+      "name": "X-_-ROHIT",
+      "uid": "8014805081",
+      "bio": "B ROHIT",
+      "achievement": "",
+      "tag": "",
+      "image": "016.jpg",
+      "tier": "silver",
+      "featured": false
+    },
+    {
+      "id": "017",
+      "name": "{I}_Trishan",
+      "uid": "8738120205",
+      "bio": "",
+      "achievement": "",
+      "tag": "",
+      "image": "017.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "018",
+      "name": "X-SPARSH",
+      "uid": "6604808885",
+      "bio": "",
+      "achievement": "",
+      "tag": "",
+      "image": "018.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "019",
+      "name": "Cutt2y5t0S2j",
+      "uid": "8840890681",
+      "bio": "",
+      "achievement": "",
+      "tag": "",
+      "image": "019.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "021",
+      "name": "CL.TRADING",
+      "uid": "2458935105",
+      "bio": "Battle in Style!",
+      "achievement": "",
+      "tag": "",
+      "image": "021.jpg",
+      "tier": "normal",
+      "featured": false
+    },
+    {
+      "id": "022",
+      "name": "X-kavish",
+      "uid": "10984307516",
+      "bio": "Jaat",
+      "achievement": "",
+      "tag": "",
+      "image": "022.jpg",
+      "tier": "bronze",
+      "featured": false
+    },
+    {
+      "id": "023",
+      "name": "Priya MP 🤍",
+      "uid": "1146978566",
+      "bio": "BELIEVE IN YOURSELF ❤",
+      "achievement": "",
+      "tag": "",
+      "image": "023.jpg",
+      "tier": "active",
+      "featured": false
+    }
+  ]
+}

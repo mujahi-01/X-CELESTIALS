@@ -1,0 +1,22 @@
+{
+  "media": [
+    {
+      "type": "video",
+      "title": "Guild Montage Vol. 1",
+      "description": "Best snipe shots and clutch moments from Season 24.",
+      "placeholder_text": "Watch Montage"
+    },
+    {
+      "type": "image",
+      "title": "Grandmaster Squad",
+      "description": "The squad that reached GM in 2 days.",
+      "placeholder_text": "View Image"
+    },
+    {
+      "type": "video",
+      "title": "Scrims Highlights",
+      "description": "Vs Team Elite - Final Zone Intensity.",
+      "placeholder_text": "Watch Clip"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-CELESTIALS | Guild App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&display=swap');
+    </style>
+</head>
+<body>
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="ripple">
+            <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="turbulence">
+                <animate attributeName="baseFrequency" from="0.01" to="0.03" dur="0.3s" />
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="8" />
+        </filter>
+    </svg>
+
+    <div class="bg-container">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+        <div class="blob blob4"></div>
+    </div>
+
+    <div class="menu-btn glass squircle" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav class="sidebar glass" id="sidebar">
+        <div class="logo">X-CELESTIALS</div>
+        <ul class="nav-links">
+            <li onclick="switchView('home')">HOME</li>
+            <li onclick="switchView('members')">MEMBERS</li>
+            <li onclick="switchView('achievement')">ACHIEVEMENTS</li>
+            <li onclick="switchView('notice')">NOTICES</li> <li onclick="switchView('watch')">WATCH</li>
+            <li onclick="switchView('join')">JOIN</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div id="view-home" class="view-section active">
+            <header class="glass squircle header-card">
+                <h1 class="logo-text" id="home-title">Loading...</h1>
+                <p class="tagline" id="home-tagline"></p>
+                <div class="guild-stats" id="home-stats">
+                    </div>
+                <p class="description" id="home-desc"></p>
+                <button class="glass-button squircle btn-primary" onclick="switchView('join')" style="margin-top: 20px;">
+                    <span>Join Us</span>
+                </button>
+            </header>
+        </div>
+
+        <div id="view-members" class="view-section" style="display: none;">
+            <div class="members-header">
+                <h2 class="section-title" style="margin-bottom: 0;">MEMBERS</h2>
+                <div class="action-icons">
+                    <div class="search-wrapper">
+                        <input type="text" id="searchInput" class="search-input-hidden" placeholder="Search...">
+                        <div class="icon-btn squircle" onclick="toggleSearch()">🔍</div>
+                    </div>
+                    <div class="icon-btn squircle" onclick="openGloryModal()">ℹ️</div>
+                </div>
+            </div>
+
+            <h3 class="subsection-label">FEATURED ELITES</h3>
+            <div id="featured-slider" class="featured-slider">
+                </div>
+
+            <h3 class="subsection-label">ALL AGENTS</h3>
+            <div id="members-grid" class="members-grid">
+                <div class="loading">Loading Agents...</div>
+            </div>
+        </div>
+
+        <div id="view-achievement" class="view-section" style="display: none;">
+            <h2 class="section-title">GUILD LEGACY</h2>
+            <div class="grid-layout" id="achievement-container">
+                <div class="loading">Loading Achievements...</div>
+            </div>
+        </div>
+
+        <div id="view-notice" class="view-section" style="display: none;">
+            <h2 class="section-title">IMPORTANT NOTICES</h2>
+            <div id="notice-container" class="notice-list">
+                <div class="loading">Loading Notices...</div>
+            </div>
+        </div>
+
+        <div id="view-watch" class="view-section" style="display: none;">
+            <h2 class="section-title">MEDIA GALLERY</h2>
+            <div id="media-container">
+                <div class="loading">Loading Media...</div>
+            </div>
+        </div>
+
+        <div id="view-join" class="view-section" style="display: none;">
+            <h2 class="section-title">RECRUITMENT</h2>
+            <div class="glass squircle input-section">
+                <h3 style="color: #fff; margin-bottom: 20px;">Requirements</h3>
+                <ul class="req-list" id="join-reqs">
+                    </ul>
+                
+                <h3 style="color: #fff; margin-top: 30px; margin-bottom: 20px;">Apply Now</h3>
+                <div class="input-group">
+                    <label class="input-label">In-Game Name</label>
+                    <input type="text" class="glass-input" placeholder="Your Name">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">UID</label>
+                    <input type="number" class="glass-input" placeholder="Your UID">
+                </div>
+                <button class="glass-button squircle btn-primary" style="width: 100%; margin-top: 10px;">
+                    <span>Submit Application</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="profile-modal" class="modal-overlay" onclick="closeModal()">
+        <div class="glass squircle profile-card" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <div class="modal-img-container">
+                <img id="modal-img" src="" alt="Profile">
+            </div>
+            <div class="modal-content">
+                <h2 id="modal-name"></h2>
+                <div class="modal-uid" id="modal-uid"></div>
+                <div class="modal-divider"></div>
+                <div class="modal-section">
+                    <h4>About</h4>
+                    <p id="modal-bio"></p>
+                </div>
+                <div class="modal-section" id="modal-achievement-box">
+                    <h4>Achievements</h4>
+                    <p id="modal-achievement" style="color: #fbc2eb;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="glory-modal" class="modal-overlay" onclick="closeGloryModal()">
+        <div class="glass squircle profile-card" style="text-align: center; padding: 40px; max-width: 400px;" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeGloryModal()">×</button>
+            <h2 style="color: #ff6b9d; margin-bottom: 20px;">⚠️ GUILD NOTICE</h2>
+            <p style="font-size: 16px; margin-bottom: 25px; color: rgba(255,255,255,0.8);">
+                MEMBERS WHO CONTRIBUTE SUFFICIENT GLORY WILL ONLY BE FEATURED.
+            </p>
+            <div class="glass squircle" style="background: rgba(255, 255, 255, 0.1); padding: 15px; display: inline-block;">
+                <span style="font-weight: 800; color: #4facfe; font-size: 18px;">DO 600/DAY GLORY</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

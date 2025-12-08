@@ -1,0 +1,20 @@
+{
+  "achievements": [
+    {
+      "title": "🏆 Tournament Wins",
+      "description": "Secured 1st place in over 15 local custom room tournaments and 3 regional scrims."
+    },
+    {
+      "title": "🔥 Grandmaster Rush",
+      "description": "5 Active Grandmaster players in the current season pushing the guild leaderboard."
+    },
+    {
+      "title": "⚔️ Guild Wars",
+      "description": "Undefeated streak in 20+ consecutive 4v4 Guild Wars against top tier opponents."
+    },
+    {
+      "title": "🌟 Regional Fame",
+      "description": "Featured in the Top 100 Regional Guild Rankings for 3 consecutive seasons."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "date": "Dec 12",
+      "time": "08:00 PM",
+      "title": "CS Rank Push",
+      "status": "Upcoming"
+    },
+    {
+      "date": "Dec 15",
+      "time": "06:00 PM",
+      "title": "Inter-Guild Tournament",
+      "status": "Registration Open"
+    }
+  ]
+}

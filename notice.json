@@ -1,0 +1,22 @@
+{
+  "notices": [
+    {
+      "date": "08 DEC 2025",
+      "title": "⚠️ GLORY REQUIREMENTS",
+      "content": "All members must complete 600 Glory per day. Inactive players for more than 2 days without notice will be kicked.",
+      "urgent": true
+    },
+    {
+      "date": "05 DEC 2025",
+      "title": "Weekly Custom Room",
+      "content": "Friday 8:00 PM internal guild war. Map: Bermuda. Be online on time.",
+      "urgent": false
+    },
+    {
+      "date": "01 DEC 2025",
+      "title": "Name Change Policy",
+      "content": "New recruits have 3 days to change their name with the 'X-' prefix. Contact officers for tags.",
+      "urgent": false
+    }
+  ]
+}
