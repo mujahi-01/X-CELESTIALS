@@ -132,18 +132,31 @@ function createCard(member, type) {
     return card;
 }
 
-// RENDER ACHIEVEMENTS
+
+// RENDER ACHIEVEMENTS (Clean Glass Version)
 async function loadAchievements() {
     const data = await fetchData(FILES.achievements);
     if (!data) return;
     const container = document.getElementById('achievement-container');
-    container.innerHTML = data.achievements.map(a => `
-        <div class="glass squircle card">
-            <h2>${a.title}</h2>
+    
+    container.innerHTML = data.achievements.map((a, index) => {
+        const firstSpaceIndex = a.title.indexOf(' ');
+        const emoji = firstSpaceIndex > -1 ? a.title.substring(0, firstSpaceIndex) : '🏆';
+        const text = firstSpaceIndex > -1 ? a.title.substring(firstSpaceIndex + 1) : a.title;
+        const tierClass = a.tier ? `ach-${a.tier.toLowerCase()}` : 'ach-rare';
+        const delay = index * 0.15; 
+        
+        return `
+        <div class="glass squircle achievement-card ${tierClass}" style="animation-delay: ${delay}s">
+            <div class="card-glow"></div>
+            <div class="emoji-icon">${emoji}</div>
+            <h2>${text}</h2>
             <p>${a.description}</p>
+            <div class="tier-badge">${a.tier ? a.tier.toUpperCase() : 'RARE'}</div>
         </div>
-    `).join('');
+    `}).join('');
 }
+
 
 // RENDER NOTICES
 async function loadNotices() {
