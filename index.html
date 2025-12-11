@@ -38,7 +38,8 @@
             <li onclick="switchView('home')">HOME</li>
             <li onclick="switchView('members')">MEMBERS</li>
             <li onclick="switchView('achievement')">ACHIEVEMENTS</li>
-            <li onclick="switchView('notice')">NOTICES</li> <li onclick="switchView('watch')">WATCH</li>
+            <li onclick="switchView('notice')">NOTICES</li> 
+            <li onclick="switchView('watch')">WATCH</li>
             <li onclick="switchView('join')">JOIN</li>
         </ul>
     </nav>
@@ -49,11 +50,15 @@
             <header class="glass squircle header-card">
                 <h1 class="logo-text" id="home-title">Loading...</h1>
                 <p class="tagline" id="home-tagline"></p>
+                
                 <div class="guild-stats" id="home-stats">
                     </div>
+                
                 <p class="description" id="home-desc"></p>
-                <button class="glass-button squircle btn-primary" onclick="switchView('join')" style="margin-top: 20px;">
-                    <span>Join Us</span>
+                
+                <button class="glass-button squircle btn-primary" onclick="switchView('join')" style="margin-top: 30px;">
+                    <span class="btn-content">Join</span>
+                    <div class="btn-glow"></div>
                 </button>
             </header>
         </div>
@@ -103,22 +108,29 @@
 
         <div id="view-join" class="view-section" style="display: none;">
             <h2 class="section-title">RECRUITMENT</h2>
+            
             <div class="glass squircle input-section">
-                <h3 style="color: #fff; margin-bottom: 20px;">Requirements</h3>
+                <h3 class="form-heading">Requirements</h3>
                 <ul class="req-list" id="join-reqs">
                     </ul>
                 
-                <h3 style="color: #fff; margin-top: 30px; margin-bottom: 20px;">Apply Now</h3>
+                <div class="divider"></div>
+
+                <h3 class="form-heading">Apply Now</h3>
+                
                 <div class="input-group">
                     <label class="input-label">In-Game Name</label>
-                    <input type="text" class="glass-input" placeholder="Your Name">
+                    <input type="text" class="glass-input squircle" placeholder="e.g. X-VENOM">
                 </div>
+                
                 <div class="input-group">
                     <label class="input-label">UID</label>
-                    <input type="number" class="glass-input" placeholder="Your UID">
+                    <input type="number" class="glass-input squircle" placeholder="e.g. 123456789">
                 </div>
-                <button class="glass-button squircle btn-primary" style="width: 100%; margin-top: 10px;">
-                    <span>Submit Application</span>
+
+                <button class="glass-button squircle btn-primary" style="width: 100%; margin-top: 20px;">
+                    <span class="btn-content">Submit Application</span>
+                    <div class="btn-glow"></div>
                 </button>
             </div>
         </div>
